@@ -1,0 +1,38 @@
+:root {
+  --color-brand-standart: #19191b;
+  --color-primary-dark: #ff7143;
+  --color-primary-light: #f89d7f54;
+  --color-brand-normal: #696871;
+  --color-brand-light: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand-normal);
+}
+a:hover {
+  color: var(--color-brand-standart);
+}
+
+/* Header */
+.header {
+  background-color: var(--color-primary-light);
+  display: flex;
+}
+.header-nav {
+  
+  justify-content: center;
+  align-items: center;
+}
+.header-nav__ul {
+}
+.header-nav__list {
+  display: inline-block;
+  list-style-type: none;
+}
+.header-nav__button {
+  color: var(--color-brand-light);
+  background-color: var(--color-primary-dark);
+  border: none;
+  border-radius: 10px;
+}
