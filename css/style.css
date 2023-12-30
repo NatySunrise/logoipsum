@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --color-brand-standart: #19191b;
   --color-primary-dark: #ff7143;
   --color-primary-light: #f89d7f54;
   --color-brand-normal: #696871;
   --color-brand-light: #ffffff;
+  --color-dark-button: #5454d4;
 }
 
 a {
@@ -13,15 +18,24 @@ a {
 a:hover {
   color: var(--color-brand-standart);
 }
-
+h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
 /* Header */
 .header {
   background-color: var(--color-primary-light);
-  display: flex;
 }
 .header-nav {
-  
-  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 48px 160px;
+  padding: 60px 0;
   align-items: center;
 }
 .header-nav__ul {
@@ -29,10 +43,89 @@ a:hover {
 .header-nav__list {
   display: inline-block;
   list-style-type: none;
+  padding-right: 50px;
 }
+
+/* Main Section */
+.main-section__grow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.main-button {
+  display: flex;
+  justify-content: space-between;
+}
+.main-section__divtext {
+  flex-direction: column;
+  padding: 108px 50px 80px 185px;
+  margin-bottom: 50px;
+}
+.main-section__image {
+  padding: 108px 185px 80px 50px;
+}
+.main-section__indeximage {
+  padding: 108px 50px 80px 185px;
+  margin-right: 170px;
+}
+.main-section__index {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-section__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-button__container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Button */
 .header-nav__button {
   color: var(--color-brand-light);
   background-color: var(--color-primary-dark);
   border: none;
   border-radius: 10px;
+  padding: 19px 60px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button-get {
+  color: var(--color-brand-light);
+  background-color: var(--color-dark-button);
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 19px 60px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button-try {
+  color: var(--color-dark-button);
+  background-color: transparent;
+  border-color: var(--color-dark-button);
+  border-radius: 10px;
+  padding: 19px 60px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button-get:hover {
+  color: var(--color-dark-button);
+  background-color: var(--color-brand-light);
+  border-color: var(--color-dark-button);
+}
+.button-try:hover {
+  color: var(--color-brand-light);
+  background-color: var(--color-dark-button);
+  border: none;
+}
+.main-button__email {
+  color: var(--color-dark-button);
+  background-color: transparent;
+  border-color: var(--color-dark-button);
+  border-radius: 10px;
+  padding: 19px 60px;
+  margin-right: 40px;
 }
