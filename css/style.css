@@ -95,9 +95,7 @@ p {
   text-align: center;
   padding: 5px 100px;
 }
-.main-plan__title {
-  color: var(--color-title);
-}
+
 .main-plan__ul:hover {
   color: var(--color-brand-light);
   background-color: var(--color-primary-dark);
@@ -118,6 +116,9 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-section__title {
+  padding: 108px 50px 80px 185px;
 }
 .main-section__plan {
   margin-bottom: 130px;
